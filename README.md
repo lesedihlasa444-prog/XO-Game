@@ -1,6 +1,9 @@
 Student Name: Lesedi Hlasa
+
 Student Number: ST10512679
+
 Module Name: Mobile App Scripting
+
 Module code: MAST5112
 
 
