@@ -36,28 +36,28 @@ The app lets two players enter their names, then play Tic-Tac-Toe on a 3Ã—3 g
 
 ```
 XOGAME/
-â”œâ”€â”€ App.tsx # Entire app: App, PlayerScreen, GameScreen, styles
-â”œâ”€â”€ index.ts # Entry point (registers App â€” unmodified)
-â”œâ”€â”€ app.json # Expo configuration
-â”œâ”€â”€ package.json # Dependencies and scripts
-â”œâ”€â”€ tsconfig.json # TypeScript configuration
-â””â”€â”€ assets/ # App icons and splash images
-```
+App.tsx # Entire app: App, PlayerScreen, GameScreen, styles
+index.ts # Entry point (registers App â€” unmodified)
+app.json # Expo configuration
+package.json # Dependencies and scripts
+tsconfig.json # TypeScript configuration
+assets/ # App icons and splash images
+
 
 All game code lives in `App.tsx`, which contains three parts:
 
-1. **`App()`** â€” wraps the app in a `NavigationContainer` with a stack navigator (Home â†’ Game)
-2. **`PlayerScreen`** â€” collects both player names and navigates to the Game screen
-3. **`GameScreen`** â€” holds the nine board states (`block1`â€“`block9`, each `0` = empty / `1` = Player 1 / `2` = Player 2), the turn state, `handlePress`, the win-check logic, and the board UI
+1. **`App()` wraps the app in a `NavigationContainer` with a stack navigator (Home + Game)
+2. **`PlayerScreen`collects both player names and navigates to the Game screen
+3. **`GameScreen`holds the nine board states (`block1`â€“`block9`, each `0` = empty / `1` = Player 1 / `2` = Player 2), the turn state, `handlePress`, the win-check logic, and the board UI
 
-## Development Journey (Stages 0â€“7)
+## Development Journey (Stages 0-7)
 
 What was added 
 
 0-2 - Project setup, player name screen, navigation between screens 
 3 - Board layout: nine `useState` blocks, `switch` statements to map each block's value to X / O / blank 
 4 -`handlePress`: tapping a cell updates the correct block and alternates turns 
-5 - Win detection and winner announcement using `&&` conditional rendering 
+5 - Win detection and winner announcement using & conditional rendering 
 6 - **Refactor (display side):** the nine `switch` statements collapsed into one reusable `contentFor` function; added the game-over guard in `handlePress`. No change in behaviour 
 7 - **Refactor (update side):** the nine near-identical `if (index === N)` blocks in `handlePress` collapsed into a single reusable pattern; key explanatory comments added. No change in behaviour 
 
@@ -70,11 +70,10 @@ Stages 6 and 7 demonstrate **refactoring**  restructuring working code without c
 bash
 npm install
 npx expo install @react-navigation/native @react-navigation/native-stack react-native-screens react-native-safe-area-context
-```
+
 3. Start the development server:
-```bash
 npx expo start
-```
+
 4. Scan the QR code with the Expo Go app (Android/iOS) or press `w` to run in a web browser
 
 ## Key Concepts Demonstrated
