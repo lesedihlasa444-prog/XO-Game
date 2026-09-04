@@ -46,7 +46,7 @@ assets/ # App icons and splash images
 
 All game code lives in `App.tsx`, which contains three parts:
 
-1. **`App()` wraps the app in a `NavigationContainer` with a stack navigator (Home + Game)
+1. **`App wraps the app in a `NavigationContainer` with a stack navigator (Home + Game)
 2. **`PlayerScreen`collects both player names and navigates to the Game screen
 3. **`GameScreen`holds the nine board states (`block1`â€“`block9`, each `0` = empty / `1` = Player 1 / `2` = Player 2), the turn state, `handlePress`, the win-check logic, and the board UI
 
