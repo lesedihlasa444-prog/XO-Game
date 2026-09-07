@@ -9,7 +9,7 @@ Module code: MAST5112
 
 # XO Game (Tic-Tac-Toe)
 
-A two-player Tic-Tac-Toe mobile app built with **React Native (Expo) and TypeScript**, developed progressively through Stages 0â€“7 of the MAST2026 practical exercise.
+A two-player Tic-Tac-Toe mobile app built with **React Native (Expo) and TypeScript**, developed progressively through Stages 0-7 of the MAST2026 practical exercise.
 
 ## Overview
 
