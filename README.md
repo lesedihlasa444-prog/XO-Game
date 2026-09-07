@@ -13,17 +13,17 @@ A two-player Tic-Tac-Toe mobile app built with **React Native (Expo) and TypeScr
 
 ## Overview
 
-The app lets two players enter their names, then play Tic-Tac-Toe on a 3Ã—3 grid. Turns alternate between Player 1 (X) and Player 2 (O), the game detects a win as soon as three matching marks line up, announces the winner, and blocks further moves once the game is won.
+The app lets two players enter their names, then play Tic-Tac-Toe on a A—3 grid. Turns alternate between Player 1 (X) and Player 2 (O), the game detects a win as soon as three matching marks line up, announces the winner, and blocks further moves once the game is won.
 
 ## Features
 
-- **Player name entry screen** â€” two text inputs and a "Start Game" button
-- **Screen navigation** â€” stack-based navigation between the Home (player setup) screen and the Game screen, with player names passed as route parameters
-- **Playable 3Ã—3 board** â€” tap any empty cell to place your mark
-- **Turn management** â€” turns alternate automatically, with an on-screen indicator of whose turn it is
-- **Win detection** â€” checks all nine board values for three matching marks in any row, column, or diagonal
-- **Winner announcement** â€” displayed conditionally using the `&&` operator
-- **Game-over guard** â€” once a winner is declared, further presses are ignored (`if (winner !== 0) return;`)
+- **Player name entry screen** two text inputs and a "Start Game" button
+- **Screen navigation** stack-based navigation between the Home (player setup) screen and the Game screen, with player names passed as route parameters
+- **Playable 3Ã—3 board** tap any empty cell to place your mark
+- **Turn management** turns alternate automatically, with an on-screen indicator of whose turn it is
+- **Win detection** checks all nine board values for three matching marks in any row, column, or diagonal
+- **Winner announcement** displayed conditionally using the & operator
+- **Game-over guard** once a winner is declared, further presses are ignored (`if (winner !== 0) return)
 
 ## Tech Stack
 
@@ -48,7 +48,7 @@ All game code lives in `App.tsx`, which contains three parts:
 
 1. **`App wraps the app in a `NavigationContainer` with a stack navigator (Home + Game)
 2. **`PlayerScreen`collects both player names and navigates to the Game screen
-3. **`GameScreen`holds the nine board states (`block1`â€“`block9`, each `0` = empty / `1` = Player 1 / `2` = Player 2), the turn state, `handlePress`, the win-check logic, and the board UI
+3. **`GameScreen`holds the nine board states (`block1`- block9`, each `0` = empty / `1` = Player 1 / `2` = Player 2), the turn state, `handlePress`, the win-check logic, and the board UI
 
 ## Development Journey (Stages 0-7)
 
