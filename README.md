@@ -85,3 +85,17 @@ npx expo start
 - `switch` statements and their refactoring into reusable functions
 - Styling with StyleSheet.create and flexbox layout (flexDirection: row for board rows)
 
+(Screenshots)
+
+<img width="768" height="1503" alt="IMG_3054" src="https://github.com/user-attachments/assets/4a38aeb2-b921-44ba-864d-0314b77d0af5" />
+
+<img width="764" height="1536" alt="IMG_3055" src="https://github.com/user-attachments/assets/b2c0592d-5098-4b86-8415-ea1d8b1f0df7" />
+
+<img width="765" height="1509" alt="IMG_3056" src="https://github.com/user-attachments/assets/d0cd99fb-d5b7-4e7b-b92c-c21ff342c877" />
+
+<img width="749" height="1542" alt="IMG_3057" src="https://github.com/user-attachments/assets/f41efe09-06f8-44e7-b426-abea1b2f66f3" />
+
+
+
+
+
